@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tells phones not to lie about their width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500&family=Lexend+Tera:wght@400;800&family=Montserrat:wght@200;300;400&family=Questrial&display=swap"
+        rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/19fcddb70d.js" crossorigin="anonymous"></script>
+
+    <!-- web title and favicon info-->
+    <title>Contact | kww | Curriculum Design</title>
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+
+    <!-- Links to stylesheets-->
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/normalize.css" />
+
+</head>
+
+<body>
+    <main>
+        <!-- nav -->
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active" style="color: #274029"> <i class="fas fa-square-full"></i>kww / <br> Design and Instruction</a>
+        <a href="/html/index.html">About Me</a>
+        <a href="/html/cv.html">CV</a>
+        <a href="/html/portfolio.html">Portfolio</a>
+        <a href="/html/contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    
+        <h1 class="header"><i class="fas fa-square-full"></i>Let's Talk</h1>
+
+        <!-- responsive form - i still need the thank you form for submitting and the button config-->
+
+        <div class="container">
+            <form action="/action_page.php">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name <span>*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email <span>*</span></label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="email" name="email" placeholder="email@email.com" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="tel" name="phone" placeholder="555-555-5555">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-25">
+                      <label for="subject">Message <span>*</span></label>
+                    </div>
+                    <div class="col-75">
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+                    </div>
+                  </div>
+                    <br>
+                    <div class="row">
+                        <input type="submit" value="Submit">
+                    </div>
+            </form>
+
+
+    </main>
+</body>
+<footer>
+
+    <div class="box">
+        <div>
+            <h3 style="font-size: 16px">&copy; 2021 by Kelli White Weaver</h3>
+        </div>
+        <div class="push">
+            <p><b style="font-size: 16px">Call</b> <br>+1-502-554-4812</p>
+        </div>
+        <div class="push">
+            <p><b style="font-size: 16px">Write</b> <br><a
+                    href="mailto:kelliwhiteweaver@gmail.com">kelliwhiteweaver@gmail.com</a>
+            </p>
+        </div>
+        <div class="push">
+            <p><b style="font-size: 16px">Follow</style></b> <br><a href="https://twitter.com/ms_whiteweaver"><img
+                        src="/images/twitter.jpg"><a href="https://www.linkedin.com/in/kelliwhiteweaver/"><img
+                            src="/images/linkedin.jpg"> </a>
+            </p>
+        </div>
+    </div>
+
+</footer>
+
+
+<script type="text/javascript" src="/javascript/script.js"></script>
+
+</html>
