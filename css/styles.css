@@ -4,12 +4,12 @@
 
 /*images*/
 
-.responsive {
+.picResponsive {
   object-fit: contain;
   height: auto;
   width: 250px;
   padding: 20px;
-  align-items: center
+  align-items: center;
 }
 
 /*green buttons*/
@@ -124,7 +124,6 @@ ul, li, p {
   
 .topnav a.active {
   background-color: white;
-  color: magenta;
 }
   
 .topnav .icon {
@@ -171,58 +170,63 @@ ul, li, p {
   color: white;
 }*/
   
-/* Column container */
-.row {  
+/* index column container */
+.aboutMe {  
   display: flex;
-  flex: row;
-  flex-wrap: wrap;
+  flex: column;
   justify-content: center;
-  margin-bottom: 50px;
+  margin: 50px;
+  padding: 50px;
+  background-color: white;
 }
   
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
+/* index - two unequal columns that sit next to each other */
+/* left column */
 .side {
-  flex: 40%;
+  flex: 60%;
   background-color: white;
-  padding-top: 55px;
-  padding-bottom: 55px;
   text-align: center;
 }
   
-  /* Main column */
+  /* right column */
 .main {
-  flex: 60%;
+  flex: 40%;
+  border-radius: 5px;
   background-color: white;
-  padding-right: 50px;
-  padding-left: 10/0px;
-  padding-bottom: 100px;
+  text-align: center;
+  box-shadow: -10px -10px 15px 10px #D7F2BA;
 }
   
 /*text boxes with information in CV and Portfolio*/
+/* portfolio box*/
 .portfolioBox {
   display: flex;
   flex-direction: column;
+  border-radius: 5px;
   margin: 75px;
   padding: 50px;
   box-shadow: -10px -10px 15px 10px #D7F2BA;
 }
 
-.cvBox {
+.test { /*cv this is the table*/
+  background-color: white;
+  border-radius: 5px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   margin: 75px;
   padding: 50px;
+  flex-wrap: wrap;
   box-shadow: -10px -10px 15px 10px #D7F2BA;
 }
 
-.cvBox2 {
+.test .selected { /* cv this is each row*/
+  background-color:white;
   display: flex;
-  flex-direction: column;
-  margin: 100px;
-  padding: 100px;
-  box-shadow: -10px -10px 15px 10px #D7F2BA;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
 }
+
 
 /*for slider - thank you to Dawson!!!!*/
 html, body{
@@ -293,7 +297,7 @@ input[type=button], input[type=submit], input[type=reset] {
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid;
   border-radius: 4px;
   resize: vertical;
 }
@@ -358,7 +362,7 @@ input[type=submit]:hover {
   resize: none;
 }
 
-/* Clear floats after the columns */
+/* Clear floats after the columns*/ 
 .row:after {
   content: "";
   display: table;
@@ -372,7 +376,7 @@ input[type=submit]:hover {
   padding: 100px;
   font-size: 40px;
   letter-spacing: 3px;
-}
+}*/
 
 /*footer styles*/
 .box {
@@ -449,32 +453,6 @@ input[type=submit]:hover {
   }
 }
 
-.test { /*this is the table*/
-  background-color: blue;
-  display: flex;
-  flex-direction: row;
-  margin: 50px;
-  width: 80%;
-  flex-wrap: wrap;
-  box-shadow: -10px -10px 15px 10px #D7F2BA;
-}
-
-.test .selected { /*this is each row*/
-  background-color: red;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 50%;
-}
-
-/*this is the title*/
-.title {
-  background-color: purple;
-  display: flex;
-  flex-direction: column;
-  align-self: stretch;
-}
-
 
 @media screen and (max-width: 800px) {
   .test {   
@@ -497,7 +475,6 @@ input[type=submit]:hover {
     width: 100%;
   }
 }
-
 
 
   
