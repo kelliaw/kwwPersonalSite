@@ -7,7 +7,3 @@
       x.className = "topnav";
     }
   }
-
-
-
-
