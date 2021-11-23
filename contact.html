@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tells phones not to lie about their width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500&family=Lexend+Tera:wght@400;800&family=Montserrat:wght@200;300;400&family=Questrial&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/19fcddb70d.js" crossorigin="anonymous"></script>
+
+    <!-- web title and favicon info-->
+    <title>Contact | kww | Curriculum Design</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
+    <!-- Links to stylesheets-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+
+</head>
+
+<body>
+    <main>
+        <!-- nav -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active" style="color: #274029"> <i class="fas fa-square-full"></i>kww</a>
+            <a href="index.html">About Me</a>
+            <a href="cv.html">CV</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+
+        <h1 class="header"><i class="fas fa-square-full"></i>Let's Talk</h1>
+
+
+        <!-- responsive form -->
+
+        <form name="myForm" action="/formProcessing.html" method="post" onsubmit="return validate">
+            <div class="container">
+                <div class="row">
+                    <div class="col-25">
+                        <label for="fname">First Name <span style="color: #BDE4A8;">*</span></label>
+                    </div>
+                    <div class="col-75" class="error">
+                        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+                        <span>Please provide your first name</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Last Name <span style="color: #BDE4A8;">*</span></label>
+                    </div>
+                    <div class="col-75" class="error">
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                        <span>Please provide your last name</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="email">Email <span style="color: #BDE4A8;">*</span></label>
+                    </div>
+                    <div class="col-75" class="error">
+                        <input type="text" id="email" name="email" placeholder="email@email.com" required>
+                        <span>Email format not recognized</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25" id="phoneNumber">
+                        <label for="phone">Phone Number <span style="color: #BDE4A8;">*</span></label>
+                    </div>
+                    <div class="col-75" class="error">
+                        <input type="tel" name="phone" placeholder="555-555-5555" required>
+                        <span>Phone number needs to be 10-15 digits</span>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject">Message <span style="color: #BDE4A8;">*</span></label>
+                    </div>
+                    <div class="col-75" class="error">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"
+                            required></textarea>
+                        <span>Please enter your message</span>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <a href="formProcessing.html" class="butLink"><input type="submit" value="Let's Talk" class="submitBtn"></a>
+                </div>
+        </form>
+
+    </main>
+</body>
+<footer>
+
+    <div class="box">
+        <div>
+            <h3 style="font-size: 16px">&copy; 2021 by Kelli White Weaver</h3>
+        </div>
+        <div class="push">
+            <h2>
+                <p><b style="font-size: 16px">Call</b> <br>+1-502-554-4812</p>
+            </h2>
+        </div>
+        <div class="push">
+            <h2>
+                <p><b style="font-size: 16px">Write</b> <br><a
+                        href="mailto:kelliwhiteweaver@gmail.com">kelliwhiteweaver@gmail.com</a>
+                </p>
+            </h2>
+        </div>
+        <div class="push">
+            <h2><b style="font-size: 16px">Follow</style></b><br>
+                <a href="https://twitter.com/ms_whiteweaver" target="_blank"></a>
+                <i class="fab fa-twitter-square" style="color: #274029"></i>
+                <a href="https://www.linkedin.com/in/kelliwhiteweaver/" target="_blank">
+                    <i class="fab fa-linkedin" style="color: #274029"></i></a>
+                <a href="https://github.com/kelliaw/" target="_blank"><i class="fab fa-github-square"
+                        style="color: #274029"></i></i></i></a>
+            </h2>
+        </div>
+    </div>
+
+</footer>
+
+<script type="text/javascript" src="js/app.js"></script>
+
+</html>
