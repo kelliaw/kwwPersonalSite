@@ -453,6 +453,7 @@ input[type=submit]:hover {
 }
 
 
+
 @media screen and (max-width: 800px) {
   .test {   
     flex-direction: column;
@@ -476,13 +477,6 @@ input[type=submit]:hover {
 }
 
 
-/*medium size screen*/
-@media only screen and (min-width: 768px) {
-  
-  }
-
-
-} 
 /*large size screen*/
 @media only screen and (min-width: 1200px) {
   body {
@@ -510,10 +504,9 @@ input[type=submit]:hover {
     flex-direction: column;
   }
   .butMove {
-    justify-content: center;
-    flex-direction: column;
-    
     justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
   }
 
 }
