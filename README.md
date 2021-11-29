@@ -1,5 +1,5 @@
 # kwwPersonalSite
-# kwwPersonalSite
+
 For code louisville final project
 
 Thought/Work Process --
@@ -14,8 +14,6 @@ CSS FEATURES -- I used Flexbox to organize content areas based on my wix website
 JAVASCRIPT FEATURES -- I utilized Javascript to show/hide my navbar through clicking a button.
 ONE EXTRA FEATURE -- I also have a navigation menu that expands and collapses based on screen sizes, and is opened and closed by clicking the "hamburger" option.
 
-Finally --
-Thank you so much for this opportunity. Creating this project was more fun than I even knew it could be and I have grown so much because of it. Thank you to my mentors for their guidance and support. 
 
 
 
